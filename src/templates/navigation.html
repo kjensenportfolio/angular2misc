@@ -1,0 +1,13 @@
+<ul>
+    <li *ng-for="#tab of tabs">
+        <a href="{{ tab.url }}">{{ tab.name }}</a>
+        <!--<ul *ng-if="tabs.children">-->
+        <ul *ng-if="tabs.children">
+            <p>random child element</p>
+            <li *ng-for="#child of tabs.children">
+                <a href="{{ child.url }}">{{ child.name }}</a>
+            </li>
+        </ul>
+    </li>
+</ul>
+<!--<p *ng-if="tabs.length > 3">Tabs Count: {{tabs.length}}</p>-->
