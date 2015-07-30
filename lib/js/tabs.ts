@@ -1,6 +1,3 @@
-/**
- * Created by kjensen on 7/29/15.
- */
 import {Component, View, NgFor, Parent} from 'angular2/angular2';
 @Component({
     selector: 'tabs',
