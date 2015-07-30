@@ -1,0 +1,91 @@
+nav {
+    background-color: lightcyan;
+    border: 1px solid white;
+    border-bottom: 1px solid #666666;
+    height: 25px;
+    padding: 25px 15px 10px 15px;
+    top: 0px;
+}
+
+nav > ul {
+    padding-top: 5px;
+    height: 30px;
+}
+
+nav li {
+    padding: 5px 5px 16px 10px;
+}
+
+nav li:last-child {
+    padding: 5px 10px 16px 10px;
+}
+
+nav p {
+    text-indent: 5px;
+    text-align-all: left;
+    text-align: left;
+    color: darkgray;
+    display: none;
+}
+
+nav li > ul li{
+    display: block;
+}
+
+nav li > ul li a {
+    color: #111;
+    display: block;
+    line-height: 2em;
+    padding: 0.5em 2em;
+    text-decoration: none;
+}
+
+nav > ul, nav > ul > li {
+    display: inline;
+}
+nav > ul, nav > ul > li a {
+    font-family: tahoma;
+    color: darkturquoise;
+    /*color: saddlebrown;*/
+    text-shadow: darkcyan;
+    text-decoration: none;
+    font-weight: 300;
+    vertical-align: middle;
+ }
+
+/* Change the background color when mouse over items */
+nav li:hover {
+    background-color: white;
+    border-top: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+    border-bottom: 1px solid white;
+    border-left: 1px solid lightgray;
+
+}
+/* display the submenu on mouse over main menu item*/
+
+nav li:hover > ul{
+    position:absolute;
+    display : block;
+}
+
+nav li > ul > li ul  {
+    display: none;
+    background-color: #888;
+}
+
+nav li > ul > li:hover > ul  {
+    position:absolute;
+    display : block;
+    margin-left:100%;
+    margin-top:-3em;
+}
+
+
+nav ul > li.sub {
+    background: url(ic_keyboard_arrow_down_white_18dp.png) right center no-repeat;
+}
+
+nav ul > li.sub li.sub {
+    background: url(ic_keyboard_arrow_right_white_18dp.png) right center no-repeat;
+}
